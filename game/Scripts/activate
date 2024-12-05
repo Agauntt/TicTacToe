@@ -47,6 +47,11 @@ fi
 
 _OLD_VIRTUAL_PATH="$PATH"
 PATH="$VIRTUAL_ENV/Scripts:$PATH"
+echo $PATH
+BASEDIR=$(dirname $0)
+echo $BASEDIR
+export PYTHONPATH="$VIRTUAL_ENV/tic_tac_toe"
+echo $PYTHONPATH
 export PATH
 
 # unset PYTHONHOME if set
